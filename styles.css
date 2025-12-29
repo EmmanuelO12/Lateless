@@ -1,0 +1,245 @@
+/* Lateless Website Styles */
+
+:root {
+    --primary: #4338CA;
+    --primary-dark: #3730A3;
+    --accent: #047857;
+    --accent-light: #10B981;
+    --text-dark: #1F2937;
+    --text-light: #6B7280;
+    --background: #F9FAFB;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    color: var(--text-dark);
+    background: var(--background);
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.header-landing {
+    padding: 80px 20px 60px;
+}
+
+.app-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.app-name {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
+}
+
+.tagline {
+    font-size: 20px;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.page-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Landing Page */
+.hero-description {
+    font-size: 18px;
+    color: var(--text-light);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-bottom: 50px;
+}
+
+.feature {
+    background: var(--white);
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.feature h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+
+.feature p {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+/* App Store Button */
+.download-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.app-store-badge {
+    height: 54px;
+    transition: transform 0.2s ease;
+}
+
+.app-store-badge:hover {
+    transform: scale(1.05);
+}
+
+.download-note {
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+/* Legal Pages */
+.legal-content {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.legal-content h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 32px 0 16px;
+    color: var(--primary);
+}
+
+.legal-content h2:first-child {
+    margin-top: 0;
+}
+
+.legal-content p {
+    margin-bottom: 16px;
+    color: var(--text-dark);
+}
+
+.legal-content ul {
+    margin: 16px 0;
+    padding-left: 24px;
+}
+
+.legal-content li {
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+
+.last-updated {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+/* Footer */
+.footer {
+    background: var(--text-dark);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 16px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+}
+
+.copyright {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* Back Link */
+.back-link {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .app-name {
+        font-size: 36px;
+    }
+    
+    .tagline {
+        font-size: 18px;
+    }
+    
+    .header-landing {
+        padding: 60px 20px 40px;
+    }
+    
+    .legal-content {
+        padding: 24px;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
